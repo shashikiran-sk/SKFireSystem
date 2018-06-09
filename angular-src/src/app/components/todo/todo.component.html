@@ -1,0 +1,43 @@
+<div class="row">
+    <h2 class="header">Your Clip Board</h2>
+    <div class="card horizontal scrollable">
+      <div class="card-image">
+  
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <div *ngFor="let todo of todos">
+            <div class="section">
+              <h5>{{todo.value}}</h5>
+              <p>{{todo.time}}</p><p>{{todo._id}}</p>
+              <button class="btn waves-effect red" (click)="deleteTodo(todo._id)">
+                Remove<i class="material-icons">delete</i>
+              </button>
+            </div>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <form class="col s12" (submit)="addTodo()">
+    <h2 class="header">Todo</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <div class="input-field col s12">
+            <textarea id="todo" class="materialize-textarea" name="todo.value" [(ngModel)]="todo.value" data-length="120"></textarea>
+            <label for="todo">Add Note</label>
+          </div>
+        </div>
+        <div class="card-action">
+          <button class="btn btn-primary waves-effect" type="submit">Clip it!</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

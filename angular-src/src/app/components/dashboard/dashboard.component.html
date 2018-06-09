@@ -1,0 +1,14 @@
+<h2 class="page-header">Dashboard</h2>
+<p>Welcome to your Dashboard</p>
+<div class="container">
+    <ul class="collection">
+        <li class="collection-item avatar hoverable" *ngFor="let message of messages">
+            <i class="material-icons circle">folder</i>
+            <p>{{message}}</p>
+        </li>
+    </ul>
+    <form (submit)="sendMsg()">
+        <input type="text" name="message" [(ngModel)]="message" id="message">
+        <input class="btn btn-lg btn-primary" type="submit" value="Send Message">
+    </form>
+</div>
