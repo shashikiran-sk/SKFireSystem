@@ -1,6 +1,7 @@
 <h2 class="page-header">Dashboard</h2>
 <p>Welcome to your Dashboard</p>
 <div class="container">
+    <a class="waves-effect waves-light btn orange" [routerLink]="['/todo']" ><i class="material-icons left">local_offer</i>Go to Todo</a>
     <ul class="collection">
         <li class="collection-item avatar hoverable" *ngFor="let message of messages">
             <i class="material-icons circle">folder</i>
