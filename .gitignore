@@ -3,4 +3,5 @@
 .git_heroku
 
 #compiled UI files
-public
+public/*
+!public/.gitkeep
