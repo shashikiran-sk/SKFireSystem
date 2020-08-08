@@ -8,8 +8,8 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  private messages:any[]=[];
-  private message;
+  public messages:any[]=[];
+  public message;
 
   constructor(
     private socketService:SocketService,
