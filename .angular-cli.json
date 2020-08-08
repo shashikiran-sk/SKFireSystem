@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular-src"
+    "name": "skfiresystem"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "../public",
+      "outDir": "public",
       "assets": [
         "assets",
         "favicon.ico"
