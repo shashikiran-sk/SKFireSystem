@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "devserver": "nodemon ./bin/www",
-    "postinstall": "cd angular-src && npm install && ng build --prod"
+    "postinstall": "cd angular-src && npm install && node_modules/.bin/ng build --prod"
   },
   "devDependencies": {
     "nodemon": "^1.17.4"
