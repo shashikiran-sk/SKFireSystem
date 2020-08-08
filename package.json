@@ -11,8 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start": "node ./bin/www",
-    "devserver": "nodemon ./bin/www",
-    "postinstall": "ng build --prod"
+    "devserver": "nodemon ./bin/www"
   },
   "devDependencies": {
     "nodemon": "^1.17.4",
