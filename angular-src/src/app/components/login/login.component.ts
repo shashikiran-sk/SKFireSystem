@@ -6,14 +6,19 @@ import { FlashMessagesService } from 'angular2-flash-messages';
 
 import { SocketService } from '../../services/socket.service';
 
+
+interface User<T> {
+  username: T;
+  password: T;
+}
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  username: String;
-  password: String;
+  username: string;
+  password: string;
 
   constructor(
     private authService: AuthService,
@@ -26,7 +31,7 @@ export class LoginComponent implements OnInit {
   }
 
   onLoginSubmit() {
-    const user = {
+    const user: User<string> = {
       username: this.username,
       password: this.password
     }
