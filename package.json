@@ -4,9 +4,9 @@
   "author": "SHASHI KIRAN",
   "private": true,
   "scripts": {
-    "start": "npm run ngBuildProd && node ./bin/www",
+    "start": "node ./bin/www",
     "devserver": "nodemon ./bin/www",
-    "ngBuildProd": "cd angular-src && ng build --prod"
+    "postinstall": "cd angular-src && npm install && ng build --prod"
   },
   "devDependencies": {
     "nodemon": "^1.17.4"
