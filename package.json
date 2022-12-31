@@ -51,7 +51,7 @@
     "socket.io": "^2.1.1",
     "socketio-jwt": "^4.5.0",
     "socketio-jwt-auth": "0.0.6",
-    "@angular/cli": "~1.7.3",
+    "@angular/cli": "~15.0.4",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/animations": "^5.2.10",
     "@angular/cdk": "^5.2.0",
